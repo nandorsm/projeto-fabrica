@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+    --cor-botao: #FFB800;
+    --cor-botao-foco: #FF900E;
+}
+
+* {
+    /* comentar atalho: ctrl + 2 PONTOS */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* sites guia para o FLEX BOX */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* https://www.alura.com.br/artigos/css-guia-do-flexbox?gclid=CjwKCAjw_tWRBhAwEiwALxFPoSYBwG58-EXlTM2sqU4q61XaGkXGjcFdWtTOzJrdAGO-Blz9FUem8BoCJqIQAvD_BwE */
+
+.header {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 65px;
+}
