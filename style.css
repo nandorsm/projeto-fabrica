@@ -6,15 +6,18 @@
 }
 
 * {
+    /* resetando os parametros do css */
     /* comentar atalho: ctrl + 2 PONTOS */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;    
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    /* font-family: 'Roboto', sans-serif; */
 }
 /* sites guia para o FLEX BOX */
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
@@ -26,6 +29,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 25px;
+
 }
 
 .logo {
@@ -35,4 +39,55 @@ body {
 .menu {
     display: flex;
     gap: 65px;
+}
+
+.item-menu {
+    font-size: 30px;
+}
+
+.area-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid gray;
+    /* border-bottom: 1px solid; */
+    padding: 50px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight:bold;
+    gap: 40px;
+}
+
+.titulo {
+    font-weight: 900 black;
+    font-size: 48px;
+}
+
+.botao {
+    width: 419px;
+    height: 109px;
+    background-color: var(--cor-botao);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .30s ease-in-out;
+}
+
+.botao:hover {
+    background-color: var(--cor-botao-foco);
+}
+
+.rodape {
+    padding: 45px;
+    border-top: 2px solid gray;
+    text-align: center;
 }
